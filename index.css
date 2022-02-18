@@ -228,6 +228,7 @@ body{
   position:absolute;
   left:600px;
   top:350px;
+  background-color: var(--quiz-font-color);
 }
 .quiz-header{
   padding: 4rem;
