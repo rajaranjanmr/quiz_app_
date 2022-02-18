@@ -1,4 +1,5 @@
 
+
 :root{
     --quiz-font-color:aliceblue;
     --background-color-quiz-card:#612897;
@@ -219,6 +220,7 @@ body{
     border-radius:15px;
     text-align: center;
     position: fixed;
+
 }
 .quiz-container{
   border-radius: 10px;
@@ -246,6 +248,7 @@ h2{
 .question-contianer ul li{
   font-size: 1.2rem;
   margin: 2rem 0;
+
 }
 .quiz-options{
     display: flex;
