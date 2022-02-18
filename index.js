@@ -77,13 +77,6 @@ function getSelected() {
     return answer
 }
 let answerResult="";
-//function returnAnswer(){
-//     let answerResult="";
-//     for(let i=0;i<quizData.length;i++){
-//         answerResult += (i+1) + ". "+quizData[i].quizData[i].correct+" "; 
-//     }
-//     console.log(answerResult);
-// }
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
