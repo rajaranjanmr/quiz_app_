@@ -34,6 +34,16 @@ const quizData = [
 
 
 ];
+let answerAll = ()=> {
+    let allAnswer="Correct Answer Options : "
+    let option =""
+    for(let i=0;i<quizData.length;i++){
+
+        allAnswer += quizData[i].correct+" ";
+
+    }
+    return allAnswer;
+}
 
 const quiz= document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
@@ -97,7 +107,9 @@ submitBtn.addEventListener('click', () => {
            <h2>You answered correctly ${score}/${quizData.length}</h2>
 
            <button onclick="location.reload()">Reload</button>
+           <h2>${answerAll()}</h2>
            `
+           
        }
     }
 })
