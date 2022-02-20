@@ -78,7 +78,7 @@ body{
 }
 .category a:hover{
     border:none;
-    background-color: var(--background-color-base);
+    background-color: var(--background-color-button);
 }
 .category-content{
     font-size:3rem;
