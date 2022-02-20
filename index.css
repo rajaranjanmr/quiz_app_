@@ -2,7 +2,7 @@
 :root{
     --quiz-font-color:aliceblue;
     --background-color-quiz-card:#612897;
-    --background-color-base:#F6830F;
+    --background-color-base:#fbcfa2;
     --background-color-button:#44b927;
     --quiz-color-black:black;
     --quiz-background-color-rules:#082032;
@@ -23,6 +23,7 @@ body{
 .container-quiz{
     width: 100%;
     text-align: center;
+    height: auto;
 }
 .container-quiz h1{ 
     font-size: 4rem;
@@ -201,6 +202,18 @@ body{
 
 .question-container{
     width: 100%;    
+}
+#answer-to-show{
+    background-color:rgb(124, 7, 124);
+    position:relative;
+    top:40rem;
+    color:black;
+    padding:1rem;
+    text-align: 
+    left;width:30%;
+    left:35%;
+    display:none;
+    padding:15px;
 }
 .question-container h1{
     font-size: 4rem;
