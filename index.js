@@ -35,6 +35,7 @@ const quizData = [
 
 ];
 
+
 const quiz= document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
@@ -43,12 +44,26 @@ const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
 const submitBtn = document.getElementById('submit')
+const togetall = document.querySelector('#answer-to-show')
 
 
 let currentQuiz = 0
 let score = 0
 
 loadQuiz()
+let answerAll = ()=> {
+    let allAnswer=""
+    let option =""
+    
+    console.log("inside function")
+    togetall.innerHTML +=`<h2>Answers : </h2>`;
+    for(let i=0;i<quizData.length;i++){
+        allAnswer = quizData[i].question + " answer: " + quizData[i].a+" ";
+        
+        togetall.innerHTML +=`<p>${allAnswer}</p><br>`;
+    }
+    
+}
 
 function loadQuiz() {
 
@@ -92,12 +107,19 @@ submitBtn.addEventListener('click', () => {
        if(currentQuiz < quizData.length) {
            loadQuiz()
        } else {
+           togetall.style.display='block';
+           togetall.style.borderRadius='2rem';
+           togetall.style.color='black';
+
            quiz.innerHTML = `
            <h2>You scored ${score*10}/${quizData.length*10}</h2>
            <h2>You answered correctly ${score}/${quizData.length}</h2>
 
            <button onclick="location.reload()">Reload</button>
+           ${answerAll()}
            `
+           
        }
     }
 })
+

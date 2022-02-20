@@ -3,7 +3,7 @@
 :root{
     --quiz-font-color:aliceblue;
     --background-color-quiz-card:#612897;
-    --background-color-base:#F6830F;
+    --background-color-base:#fbcfa2;
     --background-color-button:#44b927;
     --quiz-color-black:black;
     --quiz-background-color-rules:#082032;
@@ -24,6 +24,7 @@ body{
 .container-quiz{
     width: 100%;
     text-align: center;
+    height: auto;
 }
 .container-quiz h1{ 
     font-size: 4rem;
@@ -55,7 +56,6 @@ body{
     flex-direction: column;
     padding:1rem;
     width:40%;
-    background-color: red;
     min-height: 400px;
     border:1px solid black;
     left:200px;
@@ -79,7 +79,7 @@ body{
 }
 .category a:hover{
     border:none;
-    background-color: var(--background-color-base);
+    background-color: var(--background-color-button);
 }
 .category-content{
     font-size:3rem;
@@ -89,7 +89,6 @@ body{
     border-radius:15px;
 }
 .cat-one{
-    background-color: #D3ECA7;
     background-image:url('mathbg.jpeg');
     background-size:cover;
     
@@ -205,6 +204,18 @@ body{
 .question-container{
     width: 100%;    
 }
+#answer-to-show{
+    background-color:rgb(124, 7, 124);
+    position:relative;
+    top:40rem;
+    color:black;
+    padding:1rem;
+    text-align: 
+    left;width:30%;
+    left:35%;
+    display:none;
+    padding:15px;
+}
 .question-container h1{
     font-size: 4rem;
     font-weight: 600;
@@ -225,11 +236,12 @@ body{
 .quiz-container{
   border-radius: 10px;
   box-shadow: 0 0 10px 2px var(--quiz-font-color);
-  width: 600px;
+  width: 37.5rem;
   overflow: hidden;
   position:absolute;
-  left:600px;
-  top:350px;
+  left:37.5rem;
+  top:21.87rem;
+  background-color: var(--quiz-font-color);
 }
 .quiz-header{
   padding: 4rem;
