@@ -19,6 +19,8 @@ Its a quiz app, which lets user to take quiz. First it asks to select the catego
 
 This app is deployed on : netlify
 
-To access : https://quizj-app-dev.netlify.app/
-
+To access : 
+```bash
+  https://quizj-app-dev.netlify.app/
+```
 
